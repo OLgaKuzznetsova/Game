@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="daef747f-8e6d-4037-8774-c9f94bb21142" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Player.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/camera.cs" />
+        <option value="$PROJECT_DIR$/Virus.cs" />
+        <option value="$PROJECT_DIR$/Player.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1r3pQsuO5qBoJccNoZNzgssdNiJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="CodeInspectionSettingsId" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="daef747f-8e6d-4037-8774-c9f94bb21142" name="Default Changelist" comment="" />
+      <created>1618214618739</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618214618739</updated>
+      <workItem from="1618214623859" duration="1000" />
+      <workItem from="1618214679583" duration="10000" />
+      <workItem from="1618214785977" duration="1714000" />
+      <workItem from="1618216547856" duration="4304000" />
+      <workItem from="1618242381687" duration="28000" />
+      <workItem from="1618242474774" duration="773000" />
+      <workItem from="1618243566816" duration="394000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="34" y="185" key="SettingsEditor" timestamp="1618217279907">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="34" y="185" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1618217279907" />
+    <state x="195" y="239" key="search.everywhere.popup" timestamp="1618217370750">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="195" y="239" key="search.everywhere.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1618217370750" />
+  </component>
+</project>
