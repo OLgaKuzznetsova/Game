@@ -54,7 +54,7 @@
       <workItem from="1618216547856" duration="4304000" />
       <workItem from="1618242381687" duration="28000" />
       <workItem from="1618242474774" duration="773000" />
-      <workItem from="1618243566816" duration="394000" />
+      <workItem from="1618243566816" duration="1153000" />
     </task>
     <servers />
   </component>
@@ -67,6 +67,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="0" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618244056856">
+      <screen x="63" y="0" width="1857" height="1080" />
+    </state>
+    <state x="0" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/63.0.1857.1080@63.0.1857.1080" timestamp="1618244056856" />
     <state x="34" y="185" key="SettingsEditor" timestamp="1618217279907">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
