@@ -13,8 +13,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/camera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Virus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu.cs" />
       </list>
     </option>
   </component>
@@ -69,6 +71,8 @@
       <workItem from="1618325598617" duration="557000" />
       <workItem from="1618326232557" duration="313000" />
       <workItem from="1618474860679" duration="2000" />
+      <workItem from="1619071215586" duration="4112000" />
+      <workItem from="1619369176623" duration="684000" />
     </task>
     <servers />
   </component>

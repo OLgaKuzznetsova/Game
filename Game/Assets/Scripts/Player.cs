@@ -11,16 +11,22 @@ public class Player : MonoBehaviour
     private bool isGrounded;
     private Animator anim;
     
-   // int currentHealthPoints; //текущее количество жизней
+    int currentHealthPoints; //текущее количество жизней
 
-    //int maxHealthPoints = 5; //максимальное количество жизней
+    int maxHealthPoints = 5; //максимальное количество жизней
 
-   // private bool isHit = false;
+    private bool isHit = false;
+
+    private SpriteRenderer spriteRenderer;
+    private IEnumerator _enumerator;
+
     // Start is called before the first frame update
     void Start()
     {
+        _enumerator = OnHit();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
-       // currentHealthPoints = maxHealthPoints;
+       currentHealthPoints = maxHealthPoints;
        anim = GetComponent<Animator>();
     }
 
@@ -59,18 +65,18 @@ public class Player : MonoBehaviour
 
     void CheckGround()
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, 0.1f);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, 0.2f);
         isGrounded = colliders.Length > 1;
         if (!isGrounded)
             anim.SetInteger("State", 3);
     }
 
-    /*public void RecountHealthPoints(int deltaHP)
+    public void RecountHealthPoints(int deltaHP)
     {
         currentHealthPoints = currentHealthPoints + deltaHP;
         if (deltaHP < 0)
         {
-            StartCoroutine(OnHit());
+            StopCoroutine(OnHit());
             isHit = true;
             StartCoroutine(OnHit());
         }
@@ -81,15 +87,15 @@ public class Player : MonoBehaviour
     IEnumerator OnHit()
     {
         if (isHit)
-            GetComponent<SpriteRenderer>().color = new Color(1f, GetComponent<SpriteRenderer>().color.g - 0.04f, GetComponent<SpriteRenderer>().color.b - 0.04f);
+            spriteRenderer.color = new Color(spriteRenderer.color.r -10.2f , 255f, spriteRenderer.color.b - 10.2f);
         else
-            GetComponent<SpriteRenderer>().color = new Color(1f, GetComponent<SpriteRenderer>().color.g + 0.04f, GetComponent<SpriteRenderer>().color.b + 0.04f);
-        if (GetComponent<SpriteRenderer>().color.g == 1f)
-            StopCoroutine(OnHit());
-        if (GetComponent<SpriteRenderer>().color.g < 0)
-            isHit = false
+            spriteRenderer.color = new Color(spriteRenderer.color.r +10.2f, 255f, spriteRenderer.color.b +10.2f);
+        if (spriteRenderer.color.r == 255f)
+            StopCoroutine(_enumerator);
+        if (spriteRenderer.color.r <= 0)
+            isHit = false;
         yield return new WaitForSeconds(0.02f);
-        StartCoroutine(OnHit());
+        StartCoroutine(_enumerator);
         
-    }*/
+    }
 }
