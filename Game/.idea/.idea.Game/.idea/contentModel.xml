@@ -8,9 +8,14 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="camera.cs" t="Include" />
+          <e p="Chest1.cs" t="Include" />
+          <e p="Finish.cs" t="Include" />
+          <e p="Main.cs" t="Include" />
           <e p="Menu.cs" t="Include" />
+          <e p="movingVirus.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="Virus.cs" t="Include" />
+          <e p="virus2.cs" t="Include" />
         </e>
         <e p="Sprites" t="Include">
           <e p="Background" t="Include">
@@ -63,6 +68,17 @@
             <e p="Tilesheet" t="Include">
               <e p="character_zombie_sheet.xml" t="Include" />
               <e p="character_zombie_sheetHD.xml" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="UI" t="Include">
+          <e p="gameicons" t="Include">
+            <e p="License.txt" t="Include" />
+            <e p="Spritesheet" t="Include">
+              <e p="sheet_black1x.xml" t="Include" />
+              <e p="sheet_black2x.xml" t="Include" />
+              <e p="sheet_white1x.xml" t="Include" />
+              <e p="sheet_white2x.xml" t="Include" />
             </e>
           </e>
         </e>

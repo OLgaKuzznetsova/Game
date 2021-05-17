@@ -10,13 +10,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/camera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Virus.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/movingVirus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/123.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/virus2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Finish.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Chest1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Chest1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Main.cs" />
       </list>
     </option>
   </component>
@@ -73,6 +83,15 @@
       <workItem from="1618474860679" duration="2000" />
       <workItem from="1619071215586" duration="4112000" />
       <workItem from="1619369176623" duration="684000" />
+      <workItem from="1619409416555" duration="1467000" />
+      <workItem from="1620034672604" duration="338000" />
+      <workItem from="1620112578869" duration="2458000" />
+      <workItem from="1620120081249" duration="6215000" />
+      <workItem from="1620212814117" duration="3242000" />
+      <workItem from="1620216945059" duration="4667000" />
+      <workItem from="1620376410903" duration="3512000" />
+      <workItem from="1620381688910" duration="2229000" />
+      <workItem from="1620886215411" duration="3237000" />
     </task>
     <servers />
   </component>

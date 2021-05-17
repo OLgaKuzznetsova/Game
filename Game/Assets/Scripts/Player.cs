@@ -10,10 +10,10 @@ public class Player : MonoBehaviour
     public Transform groundCheck;
     private bool isGrounded;
     private Animator anim;
-    
+    public Player player;
     int currentHealthPoints; //текущее количество жизней
-
-    int maxHealthPoints = 5; //максимальное количество жизней
+    public GameObject LoseScreen;
+    int maxHealthPoints = 3; //максимальное количество жизней
 
     private bool isHit = false;
 
@@ -45,13 +45,21 @@ public class Player : MonoBehaviour
             if (isGrounded)
                 anim.SetInteger("State", 2);
         }
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+            rb.AddForce(transform.up * jumpHeight, ForceMode2D.Impulse);
+
+        if (transform.position.y < -75f)
+        {
+            currentHealthPoints = 0;
+            RecountHealthPoints(0);
+        }
+           
     }
 
     void FixedUpdate()
     {
         rb.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, rb.velocity.y);
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-            rb.AddForce(transform.up * jumpHeight, ForceMode2D.Impulse);
+        
     }
 
     void Flip()
@@ -80,8 +88,19 @@ public class Player : MonoBehaviour
             isHit = true;
             StartCoroutine(OnHit());
         }
-        //if (currentHealthPoints <= 0) можно сдлеать чтобы бесконечно падал вниз
 
+        if (currentHealthPoints <= 0)
+        {
+            Lose();
+        }
+
+    }
+    public void Lose()
+    {
+        Time.timeScale = 0f;
+        player.enabled = false;
+       
+        LoseScreen.SetActive(true);
     }
 
     IEnumerator OnHit()
@@ -97,5 +116,19 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(0.02f);
         StartCoroutine(_enumerator);
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D collisions)
+    {
+        if (collisions.gameObject.tag == "heart")
+        {
+         Destroy(collisions.gameObject);
+         RecountHealthPoints(1);
+        }
+    }
+
+    public int GetHearts()
+    {
+        return currentHealthPoints;
     }
 }
