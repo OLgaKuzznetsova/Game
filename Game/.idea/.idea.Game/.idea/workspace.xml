@@ -18,15 +18,15 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/camera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Virus.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Menu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/movingVirus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/123.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/virus2.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Finish.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Chest1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Chest1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Chest1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu.cs" />
       </list>
     </option>
   </component>
@@ -92,6 +92,7 @@
       <workItem from="1620376410903" duration="3512000" />
       <workItem from="1620381688910" duration="2229000" />
       <workItem from="1620886215411" duration="3237000" />
+      <workItem from="1621319012444" duration="5437000" />
     </task>
     <servers />
   </component>
