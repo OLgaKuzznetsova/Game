@@ -13,7 +13,8 @@ public class Player : MonoBehaviour
     public Player player;
     int currentHealthPoints; //текущее количество жизней
     public GameObject LoseScreen;
-    int maxHealthPoints = 3; //максимальное количество жизней
+    int maxHealthPoints = 3; 
+    
 
     private bool isHit = false;
 
@@ -23,7 +24,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _enumerator = OnHit();
+        //_enumerator = OnHit();
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
        currentHealthPoints = maxHealthPoints;
@@ -82,12 +83,12 @@ public class Player : MonoBehaviour
     public void RecountHealthPoints(int deltaHP)
     {
         currentHealthPoints = currentHealthPoints + deltaHP;
-        if (deltaHP < 0)
-        {
-            StopCoroutine(OnHit());
-            isHit = true;
-            StartCoroutine(OnHit());
-        }
+        //if (deltaHP < 0)
+        //{
+            //StopCoroutine(OnHit());
+            //isHit = true;
+            //StartCoroutine(OnHit());
+        //}
 
         if (currentHealthPoints <= 0)
         {
@@ -103,7 +104,7 @@ public class Player : MonoBehaviour
         LoseScreen.SetActive(true);
     }
 
-    IEnumerator OnHit()
+    /*IEnumerator OnHit()
     {
         if (isHit)
             spriteRenderer.color = new Color(spriteRenderer.color.r -10.2f , 255f, spriteRenderer.color.b - 10.2f);
@@ -116,7 +117,7 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(0.02f);
         StartCoroutine(_enumerator);
         
-    }
+    }*/
 
     private void OnTriggerEnter2D(Collider2D collisions)
     {

@@ -4,19 +4,43 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class Chest1 : MonoBehaviour
 {
     public KeyCode action = KeyCode.O;
     public Player player; 
     public GameObject QuestionPanel;
-    public string answer;
+    public string answer1;
+    public string answer2;
     public bool isClosed;
-
-    public string GetAnswer()
+    public InputField input;
+    public GameObject WinPanel;
+    
+    public GameObject LosePanel;
+    
+    public void ClosePanel()
     {
-        return answer;
+        WinPanel.SetActive(false); 
+        LosePanel.SetActive(false);
+        Time.timeScale = 1f;
+        player.enabled = true;
     }
+    public void CheckAnswer()
+    {
+        if (input.text.ToLower() == answer1 || input.text.ToLower() == answer2)
+        {
+            player.RecountHealthPoints(+1);
+            QuestionPanel.SetActive(false);
+            WinPanel.SetActive(true);
+        }
+        else
+        {
+            QuestionPanel.SetActive(false);
+            LosePanel.SetActive(true);
+        }
+    }
+    
     void OnCollisionEnter2D(Collision2D collision)
     {
         

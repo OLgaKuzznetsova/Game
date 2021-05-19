@@ -11,33 +11,9 @@ public class Main : MonoBehaviour
     public Text textHearts;
     public GameObject PauseScreen;
     public GameObject WinScreen;
-    public InputField input;
-    public GameObject QuestionPanel;
-    public GameObject WinPanel;
-    public Chest1 chest;
-    public GameObject LosePanel;
+    
 
-    public void ClosePanel()
-    {
-        WinPanel.SetActive(false); 
-        LosePanel.SetActive(false);
-        Time.timeScale = 1f;
-        player.enabled = true;
-    }
-    public void CheckAnswer()
-    {
-        if (input.text == chest.GetAnswer())
-        {
-            player.RecountHealthPoints(+1);
-            QuestionPanel.SetActive(false);
-            WinPanel.SetActive(true);
-        }
-        else
-        {
-            QuestionPanel.SetActive(false);
-            LosePanel.SetActive(true);
-        }
-    }
+    
 
     public void ReloadLevel()
     {
