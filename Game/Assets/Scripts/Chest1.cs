@@ -18,6 +18,7 @@ public class Chest1 : MonoBehaviour
     public GameObject WinPanel;
     
     public GameObject LosePanel;
+    public Chest1 chest;
     
     public void ClosePanel()
     {
@@ -25,6 +26,9 @@ public class Chest1 : MonoBehaviour
         LosePanel.SetActive(false);
         Time.timeScale = 1f;
         player.enabled = true;
+        
+        
+        
     }
     public void CheckAnswer()
     {
@@ -39,6 +43,7 @@ public class Chest1 : MonoBehaviour
             QuestionPanel.SetActive(false);
             LosePanel.SetActive(true);
         }
+        Destroy(chest.gameObject);
     }
     
     void OnCollisionEnter2D(Collision2D collision)
@@ -52,6 +57,9 @@ public class Chest1 : MonoBehaviour
             QuestionPanel.SetActive(true);
             isClosed = true;
         }
+        
+        //Destroy(collision.gameObject);
+            
     }
     
 

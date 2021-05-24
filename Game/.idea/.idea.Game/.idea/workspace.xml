@@ -25,8 +25,9 @@
         <option value="$PROJECT_DIR$/Assets/Scenes/Chest1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Chest1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Chest1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MovingPathFinder.cs" />
       </list>
     </option>
   </component>
@@ -94,6 +95,9 @@
       <workItem from="1620886215411" duration="3237000" />
       <workItem from="1621319012444" duration="5437000" />
       <workItem from="1621416351159" duration="5766000" />
+      <workItem from="1621493758897" duration="1316000" />
+      <workItem from="1621591381822" duration="7799000" />
+      <workItem from="1621835849503" duration="7656000" />
     </task>
     <servers />
   </component>
